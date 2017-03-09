@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_GC7tAPd9EeaBR4sf01HgQA" name="RootElement">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_tMUXIP8vEean_aT7pU34Ng">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ZQJI0PkqEeaBR4sf01HgQA" name="Operator"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-wUloPkqEeaBR4sf01HgQA" name="Central Station" visibility="public">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9XjWQPm2EeaszrqASHEI4A" name="Start/Stop Mission">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_uplF4Pp6EeaXtsXnUWO2Pg" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WBDesPp_EeaXtsXnUWO2Pg" name="ExtensionPoint2"/>
+      <include xmi:type="uml:Include" xmi:id="_gosg4PqBEeaXtsXnUWO2Pg" addition="_R_-oMPp6EeaXtsXnUWO2Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_R_-oMPp6EeaXtsXnUWO2Pg" name="Control Rovers">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_KMEKgPp7EeaXtsXnUWO2Pg" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_sH7WkPp8EeaXtsXnUWO2Pg" name="ExtensionPoint2"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_JZvDwPp9EeaXtsXnUWO2Pg" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_-G_uwPp9EeaXtsXnUWO2Pg" name="ExtensionPoint4"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_zeF5kPqBEeaXtsXnUWO2Pg" name="ExtensionPoint5"/>
+      <include xmi:type="uml:Include" xmi:id="_ibhFMPqIEeaXtsXnUWO2Pg" addition="_EiHT4PqFEeaXtsXnUWO2Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_o4UnAPp8EeaXtsXnUWO2Pg" name="Virtual Mapping">
+      <extend xmi:type="uml:Extend" xmi:id="_sH6IcPp8EeaXtsXnUWO2Pg" extendedCase="_R_-oMPp6EeaXtsXnUWO2Pg" extensionLocation="_sH7WkPp8EeaXtsXnUWO2Pg"/>
+      <include xmi:type="uml:Include" xmi:id="_6WVcYPqEEeaXtsXnUWO2Pg" addition="_Kk_40PqEEeaXtsXnUWO2Pg"/>
+      <include xmi:type="uml:Include" xmi:id="_slKccPqNEeaXtsXnUWO2Pg" addition="_T7WWcPp_EeaXtsXnUWO2Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_T7WWcPp_EeaXtsXnUWO2Pg" name="Gather Data">
+      <extend xmi:type="uml:Extend" xmi:id="_zeFSgPqBEeaXtsXnUWO2Pg" extendedCase="_R_-oMPp6EeaXtsXnUWO2Pg" extensionLocation="_zeF5kPqBEeaXtsXnUWO2Pg"/>
+      <include xmi:type="uml:Include" xmi:id="_rGqXwPqFEeaXtsXnUWO2Pg" addition="_GjmDcPqFEeaXtsXnUWO2Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EiHT4PqFEeaXtsXnUWO2Pg" name="Avoid Obstacles"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MTlQsPm3EeaszrqASHEI4A" memberEnd="_MTo7EPm3EeaszrqASHEI4A _MTo7Efm3EeaszrqASHEI4A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MTns8Pm3EeaszrqASHEI4A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MToUAPm3EeaszrqASHEI4A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MTo7EPm3EeaszrqASHEI4A" name="operator" type="_ZQJI0PkqEeaBR4sf01HgQA" association="_MTlQsPm3EeaszrqASHEI4A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MTo7Efm3EeaszrqASHEI4A" name="begin mission" type="_9XjWQPm2EeaszrqASHEI4A" association="_MTlQsPm3EeaszrqASHEI4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8U4pMPqDEeaXtsXnUWO2Pg" name="Rover">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_D6fIoPqEEeaXtsXnUWO2Pg" client="_8U4pMPqDEeaXtsXnUWO2Pg" supplier="_-wUloPkqEeaBR4sf01HgQA"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Kk_40PqEEeaXtsXnUWO2Pg" name="Detect Obstacles"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GjmDcPqFEeaXtsXnUWO2Pg" name="Sample Taking"/>
+  </packagedElement>
+</uml:Model>

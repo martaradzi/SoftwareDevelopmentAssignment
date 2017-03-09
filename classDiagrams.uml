@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_aeOOYP8xEean_aT7pU34Ng" name="RootElement">
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_N_AUcAPuEeew4qjGVOMXIw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_N_p0sAPuEeew4qjGVOMXIw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_N_p0sQPuEeew4qjGVOMXIw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_N_p0sgPuEeew4qjGVOMXIw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_N_p0swPuEeew4qjGVOMXIw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_N_p0tAPuEeew4qjGVOMXIw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_N_p0tQPuEeew4qjGVOMXIw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_N_p0tgPuEeew4qjGVOMXIw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_pk2r0ANOEeew4qjGVOMXIw">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_iB6CQP8xEean_aT7pU34Ng" name="Central Station">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Jkkl8APtEeew4qjGVOMXIw" name="Operator">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_S7pDAAPtEeew4qjGVOMXIw" name="main():void"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UvHy0APtEeew4qjGVOMXIw" name="Central Station">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_YkQ4YAPtEeew4qjGVOMXIw" name="mapDatabase" visibility="private" type="_liY7sAPtEeew4qjGVOMXIw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_15X-8APyEeew4qjGVOMXIw" name="missionComplete" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_9D0MYAPyEeew4qjGVOMXIw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__OkzwAPyEeew4qjGVOMXIw" name="path" visibility="private" type="_ROFGQAPzEeew4qjGVOMXIw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_acnTUASsEeebBIp_2GXuIg" name="state" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_gxcucASsEeebBIp_2GXuIg"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_VYsskAPzEeew4qjGVOMXIw" name="createRover" visibility="private" concurrency="concurrent"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lZE_8APzEeew4qjGVOMXIw" name="getData" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nYG4cAPzEeew4qjGVOMXIw" name="storeData" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_qLF9cAPzEeew4qjGVOMXIw" name="createPath" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_rruCsAPzEeew4qjGVOMXIw" name="instructRover" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_juDe8ASrEeebBIp_2GXuIg" name="setState" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ohIzcASrEeebBIp_2GXuIg" name="getState" visibility="public"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_pQDG8APyEeew4qjGVOMXIw" name="boolean"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_ROFGQAPzEeew4qjGVOMXIw" name="int array"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_liY7sAPtEeew4qjGVOMXIw" name="Database">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5e6s0APzEeew4qjGVOMXIw" name="database" type="_eeD5IAP0Eeew4qjGVOMXIw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ErIGkAP0Eeew4qjGVOMXIw" name="Data">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_M6YnAAP0Eeew4qjGVOMXIw" name="visited">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_O9bc0AP0Eeew4qjGVOMXIw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QG9QsAP0Eeew4qjGVOMXIw" name="isObstacle">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_S4DfUAP0Eeew4qjGVOMXIw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TkJwUAP0Eeew4qjGVOMXIw" name="photos" type="_SSeY4ASrEeebBIp_2GXuIg"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_eeD5IAP0Eeew4qjGVOMXIw" name="Data[][]"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_KVLp4AP1Eeew4qjGVOMXIw" name="BufferedImage"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_PmytcAP1Eeew4qjGVOMXIw" name="BufferedImage[]"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_YNBjcAP1Eeew4qjGVOMXIw" name="Photo[]"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_SSeY4ASrEeebBIp_2GXuIg" name="BufferedImage[]"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_XB58cASrEeebBIp_2GXuIg" name="Rover">
+    <packagedElement xmi:type="uml:Class" xmi:id="_qYenQAP1Eeew4qjGVOMXIw" name="RoverFactory" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gXDwMAP2Eeew4qjGVOMXIw" name="direction">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_ldCLgAP2Eeew4qjGVOMXIw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_o9vacASsEeebBIp_2GXuIg" name="state">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_rvko4ASsEeebBIp_2GXuIg"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_V7AyoAP3Eeew4qjGVOMXIw" name="createRover"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7SLbIASsEeebBIp_2GXuIg" name="update"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yrz58AP2Eeew4qjGVOMXIw" name="Scout">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Br2KoAP3Eeew4qjGVOMXIw" name="detectObstacles" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zkspwAP2Eeew4qjGVOMXIw" name="Sampling">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2b1O8AP2Eeew4qjGVOMXIw" name="name" type="_5vUY8AP2Eeew4qjGVOMXIw"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_QZg48AP3Eeew4qjGVOMXIw" name="takePhoto"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_5vUY8AP2Eeew4qjGVOMXIw" name="String"/>
+    </packagedElement>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_asZpkAPtEeew4qjGVOMXIw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_asa3sAPtEeew4qjGVOMXIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
