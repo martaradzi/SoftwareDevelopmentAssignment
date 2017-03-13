@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hdOPcAgGEeeYX4L5Y8CGVQ" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_pjoV4AgGEeeYX4L5Y8CGVQ" type="InstanceSpecification_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_pjoV4ggGEeeYX4L5Y8CGVQ" type="InstanceSpecification_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_pjoV4wgGEeeYX4L5Y8CGVQ" type="InstanceSpecification_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_pjo88AgGEeeYX4L5Y8CGVQ" y="5"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_pjo88QgGEeeYX4L5Y8CGVQ" type="InstanceSpecification_SlotCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_EgXCEAgHEeeYX4L5Y8CGVQ" type="Slot_SlotLabel">
+        <element xmi:type="uml:Slot" href="ObjectDiagram.uml#_EgUl0AgHEeeYX4L5Y8CGVQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_EgXCEQgHEeeYX4L5Y8CGVQ"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_pjo88ggGEeeYX4L5Y8CGVQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_pjo88wgGEeeYX4L5Y8CGVQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_pjo89AgGEeeYX4L5Y8CGVQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pjo89QgGEeeYX4L5Y8CGVQ"/>
+    </children>
+    <element xmi:type="uml:InstanceSpecification" href="ObjectDiagram.uml#_pjnHwAgGEeeYX4L5Y8CGVQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pjoV4QgGEeeYX4L5Y8CGVQ" x="354" y="15" width="209" height="183"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_hdOPcQgGEeeYX4L5Y8CGVQ" name="diagram_compatibility_version" stringValue="1.2.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_hdOPcggGEeeYX4L5Y8CGVQ"/>
+  <styles xmi:type="style:PapyrusViewStyle" xmi:id="_hdOPcwgGEeeYX4L5Y8CGVQ">
+    <owner xmi:type="uml:Model" href="ObjectDiagram.uml#_hdFskAgGEeeYX4L5Y8CGVQ"/>
+  </styles>
+  <element xmi:type="uml:Model" href="ObjectDiagram.uml#_hdFskAgGEeeYX4L5Y8CGVQ"/>
+</notation:Diagram>

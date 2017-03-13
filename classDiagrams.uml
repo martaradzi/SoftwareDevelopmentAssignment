@@ -32,6 +32,7 @@
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_iB6CQP8xEean_aT7pU34Ng" name="something">
     <packagedElement xmi:type="uml:Class" xmi:id="_Jkkl8APtEeew4qjGVOMXIw" name="Operator">
+      <generalization xmi:type="uml:Generalization" xmi:id="_2J4PQAgHEeeYX4L5Y8CGVQ" general="_UvHy0APtEeew4qjGVOMXIw"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_S7pDAAPtEeew4qjGVOMXIw" name="start" visibility="public"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_w-LTYAS6EeebBIp_2GXuIg" name="stop"/>
     </packagedElement>
@@ -44,25 +45,18 @@
         <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_9D0MYAPyEeew4qjGVOMXIw"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="__OkzwAPyEeew4qjGVOMXIw" name="path" visibility="private" type="_ROFGQAPzEeew4qjGVOMXIw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_acnTUASsEeebBIp_2GXuIg" name="state" visibility="private">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_gxcucASsEeebBIp_2GXuIg"/>
-      </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_GMo-sAWLEeeYX4L5Y8CGVQ" name="data" type="_ErIGkAP0Eeew4qjGVOMXIw" association="_GMktQAWLEeeYX4L5Y8CGVQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XwM8EAWLEeeYX4L5Y8CGVQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XwmksAWLEeeYX4L5Y8CGVQ" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_LcmUEgWZEeeYX4L5Y8CGVQ" name="roverfactory" type="_DR100AS3EeebBIp_2GXuIg" association="_LclF8AWZEeeYX4L5Y8CGVQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_lRN2wQWbEeeYX4L5Y8CGVQ" name="rover" type="_qYenQAP1Eeew4qjGVOMXIw" association="_lRMooAWbEeeYX4L5Y8CGVQ"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_VYsskAPzEeew4qjGVOMXIw" name="createRover" visibility="private" concurrency="concurrent"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_lZE_8APzEeew4qjGVOMXIw" name="getData" visibility="private"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_nYG4cAPzEeew4qjGVOMXIw" name="storeData" visibility="private"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_qLF9cAPzEeew4qjGVOMXIw" name="createPath" visibility="private"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_rruCsAPzEeew4qjGVOMXIw" name="instructRover" visibility="private"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_juDe8ASrEeebBIp_2GXuIg" name="setState" visibility="private"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_ohIzcASrEeebBIp_2GXuIg" name="getState" visibility="public"/>
       <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_pQDG8APyEeew4qjGVOMXIw" name="boolean"/>
-      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_ROFGQAPzEeew4qjGVOMXIw" name="int array"/>
+      <nestedClassifier xmi:type="uml:PrimitiveType" xmi:id="_ROFGQAPzEeew4qjGVOMXIw" name="int[] array"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_liY7sAPtEeew4qjGVOMXIw" name="Database">
       <generalization xmi:type="uml:Generalization" xmi:id="_fzjvkAS8EeebBIp_2GXuIg" general="_2O-eoAS6EeebBIp_2GXuIg"/>
@@ -82,14 +76,14 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_uQR1wAWWEeeYX4L5Y8CGVQ"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:DataType" xmi:id="_eeD5IAP0Eeew4qjGVOMXIw" name="Data[][]"/>
+      <nestedClassifier xmi:type="uml:DataType" xmi:id="_eeD5IAP0Eeew4qjGVOMXIw" name="Data[][] array"/>
       <nestedClassifier xmi:type="uml:DataType" xmi:id="_KVLp4AP1Eeew4qjGVOMXIw" name="BufferedImage"/>
       <nestedClassifier xmi:type="uml:DataType" xmi:id="_PmytcAP1Eeew4qjGVOMXIw" name="BufferedImage[]"/>
       <nestedClassifier xmi:type="uml:DataType" xmi:id="_YNBjcAP1Eeew4qjGVOMXIw" name="Photo[]"/>
       <nestedClassifier xmi:type="uml:DataType" xmi:id="_SSeY4ASrEeebBIp_2GXuIg" name="BufferedImage[]"/>
     </packagedElement>
     <packagedElement xmi:type="uml:DataType" xmi:id="_Y-nDQAS3EeebBIp_2GXuIg" name="Rover"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_DR100AS3EeebBIp_2GXuIg" name="RoverFactory">
+    <packagedElement xmi:type="uml:Class" xmi:id="_DR100AS3EeebBIp_2GXuIg" name="Rover Factory">
       <ownedOperation xmi:type="uml:Operation" xmi:id="_GJdiMAS3EeebBIp_2GXuIg" name="getRover" visibility="public" concurrency="concurrent">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_jSgfgAS4EeebBIp_2GXuIg" name="Rover" type="_qYenQAP1Eeew4qjGVOMXIw" direction="return"/>
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_VzEjMAWaEeeYX4L5Y8CGVQ" name="type" type="_kiioUAWaEeeYX4L5Y8CGVQ" effect="create">
@@ -108,14 +102,13 @@
         <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_rvko4ASsEeebBIp_2GXuIg"/>
       </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_V7AyoAP3Eeew4qjGVOMXIw" name="createRover"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_7SLbIASsEeebBIp_2GXuIg" name="update"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_yrz58AP2Eeew4qjGVOMXIw" name="Scouting">
+    <packagedElement xmi:type="uml:Class" xmi:id="_yrz58AP2Eeew4qjGVOMXIw" name="Scouting Rover">
       <generalization xmi:type="uml:Generalization" xmi:id="_2zBggASyEeebBIp_2GXuIg" general="_qYenQAP1Eeew4qjGVOMXIw"/>
       <generalization xmi:type="uml:Generalization" xmi:id="_eri-oAS8EeebBIp_2GXuIg" general="_2O-eoAS6EeebBIp_2GXuIg"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_Br2KoAP3Eeew4qjGVOMXIw" name="detectObstacles" visibility="private"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_zkspwAP2Eeew4qjGVOMXIw" name="Data Sampling">
+    <packagedElement xmi:type="uml:Class" xmi:id="_zkspwAP2Eeew4qjGVOMXIw" name="Data Sampling Rover">
       <generalization xmi:type="uml:Generalization" xmi:id="_1RYuoASyEeebBIp_2GXuIg" general="_qYenQAP1Eeew4qjGVOMXIw"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_2b1O8AP2Eeew4qjGVOMXIw" name="name" type="_5vUY8AP2Eeew4qjGVOMXIw"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_QZg48AP3Eeew4qjGVOMXIw" name="takePhoto"/>
@@ -132,8 +125,33 @@
       <ownedOperation xmi:type="uml:Operation" xmi:id="_ewrywAS7EeebBIp_2GXuIg" name="singletonOperation"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_g0v8QAS7EeebBIp_2GXuIg" name="getSingletonData"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_kFGRoAWKEeeYX4L5Y8CGVQ" name="Subject"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_oy-WAAWKEeeYX4L5Y8CGVQ" name="Observer"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kFGRoAWKEeeYX4L5Y8CGVQ" name="Subject" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GbSesAf8EeeYX4L5Y8CGVQ" name="observers" visibility="private" type="_g2dV8Af8EeeYX4L5Y8CGVQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NC4BQAf9EeeYX4L5Y8CGVQ" name="state" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fXHNoAf9EeeYX4L5Y8CGVQ" name="getState">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_rbkeAAf9EeeYX4L5Y8CGVQ" name="state" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tqaUIAf9EeeYX4L5Y8CGVQ" name="setState" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ykC8kAf9EeeYX4L5Y8CGVQ" name="state">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__D2FIAf9EeeYX4L5Y8CGVQ" name="attach">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_KQN28Af-EeeYX4L5Y8CGVQ" name="observer" type="_oy-WAAWKEeeYX4L5Y8CGVQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Nk5TwAf-EeeYX4L5Y8CGVQ" name="detach">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_XbiBsAf-EeeYX4L5Y8CGVQ" name="observer" type="_oy-WAAWKEeeYX4L5Y8CGVQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_YwOjwAf-EeeYX4L5Y8CGVQ" name="notifyAllObservers"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oy-WAAWKEeeYX4L5Y8CGVQ" name="Observer" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ziHOsAf6EeeYX4L5Y8CGVQ" name="subject" type="_GW3uMAf7EeeYX4L5Y8CGVQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_OuMlgAf7EeeYX4L5Y8CGVQ" name="update" isAbstract="true"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_ZMNhwAS0EeebBIp_2GXuIg" memberEnd="_ZMRzMAS0EeebBIp_2GXuIg _ZMSaQAS0EeebBIp_2GXuIg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZMP-AAS0EeebBIp_2GXuIg" source="org.eclipse.papyrus">
@@ -147,7 +165,7 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KpJK0AS9EeebBIp_2GXuIg" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_KpJK0QS9EeebBIp_2GXuIg" name="rover" type="_qYenQAP1Eeew4qjGVOMXIw" association="_KpH8sAS9EeebBIp_2GXuIg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SWYjUAS9EeebBIp_2GXuIg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SWYjUAS9EeebBIp_2GXuIg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SWc0wAS9EeebBIp_2GXuIg" value="*"/>
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_KpJK0gS9EeebBIp_2GXuIg" name="roverfactory" type="_DR100AS3EeebBIp_2GXuIg" aggregation="shared" association="_KpH8sAS9EeebBIp_2GXuIg"/>
@@ -183,6 +201,24 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lRN2wAWbEeeYX4L5Y8CGVQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_lROd0AWbEeeYX4L5Y8CGVQ" name="central station" type="_UvHy0APtEeew4qjGVOMXIw" association="_lRMooAWbEeeYX4L5Y8CGVQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lRN2wQWbEeeYX4L5Y8CGVQ" name="rover" type="_qYenQAP1Eeew4qjGVOMXIw" aggregation="composite" association="_lRMooAWbEeeYX4L5Y8CGVQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFuJYAgCEeeYX4L5Y8CGVQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFzo8AgCEeeYX4L5Y8CGVQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_GW3uMAf7EeeYX4L5Y8CGVQ" name="Subject" visibility="protected"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_g2dV8Af8EeeYX4L5Y8CGVQ" name="ArrayList" visibility="private"/>
+  <packagedElement xmi:type="uml:Model" xmi:id="_bhZ0cAgKEeeYX4L5Y8CGVQ" name="Object Diagram Scouting">
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_j-gjoAgKEeeYX4L5Y8CGVQ" name="cs: Central Station">
+      <slot xmi:type="uml:Slot" xmi:id="_lSLyAAgKEeeYX4L5Y8CGVQ" definingFeature="_YkQ4YAPtEeew4qjGVOMXIw"/>
+      <slot xmi:type="uml:Slot" xmi:id="_ufsqcAgKEeeYX4L5Y8CGVQ" definingFeature="_15X-8APyEeew4qjGVOMXIw">
+        <value xmi:type="uml:LiteralBoolean" xmi:id="_zkfaAAgKEeeYX4L5Y8CGVQ"/>
+      </slot>
+      <slot xmi:type="uml:Slot" xmi:id="_IKZHAAgLEeeYX4L5Y8CGVQ" definingFeature="__OkzwAPyEeew4qjGVOMXIw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_kCDxcAgLEeeYX4L5Y8CGVQ" name="Scouting Rover">
+      <slot xmi:type="uml:Slot" xmi:id="_p870cAgLEeeYX4L5Y8CGVQ" definingFeature="_gXDwMAP2Eeew4qjGVOMXIw"/>
+    </packagedElement>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_asZpkAPtEeew4qjGVOMXIw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_asa3sAPtEeew4qjGVOMXIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
